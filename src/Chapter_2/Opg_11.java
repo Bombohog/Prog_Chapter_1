@@ -1,22 +1,22 @@
-/*
- * "Projektet" handler om at få printet befolkningen ud.
- *
- * Denne kode er programmeret af:
- * Lasse Jørgensen Kongsdal
- *
- * Programmet printer befolkningens størresle i og efter de fem år.
- */
+package Chapter_2;
+
+import java.util.Scanner;
 
 public class Opg_11 {
 
     public static void main(String[] args) {
+
+        // input af år
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter amount of years: ");
+        int years = input.nextInt();
 
         // dette er start populatioen.
         int currentPopulation = 312032486;
         int iHolder = 0;
 
         // dette loop løber gennem alle fem år.
-        for (int x = 1; x <= 5; x++) {
+        for (int x = 1; x <= years; x++) {
             // dette loop tæller befolkningen op alt efter hvor lang tide der er gået siden starten af året.
             for (int i = 1; i <= (365 * 24 * 60 * 60); i++) {
                 // Jeg bruger modulo for at tjekke om der gået 7 sekunder ved at se om der kommer rest hvis i blive divideret med 7

@@ -1,4 +1,4 @@
-/*
+package Chapter_1;/*
  * "Projektet" handler om at få printet en tabel af tal.
  *
  * Denne kode er programmeret af:

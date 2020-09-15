@@ -1,4 +1,4 @@
-/*
+package Chapter_1;/*
  * "Projektet" handler om at få printe en besked fem gange via et loop.
  *
  * Denne kode er programmeret af:

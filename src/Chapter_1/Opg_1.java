@@ -1,4 +1,4 @@
-/*
+package Chapter_1;/*
  * "Projektet" handler om at få udskrevet eller printe tre beskeder.
  *
  * Denne kode er programmeret af:
