@@ -15,7 +15,7 @@ public class Moms {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter purchase amount: ");
+        System.out.print("Skriv antal kroner: ");
         double Pris = input.nextDouble();
 
         plusDanskMoms(Pris);
@@ -28,7 +28,7 @@ public class Moms {
         double moms = 25;
         pris = pris * (1 + (moms / 100));
 
-        System.out.println("Pris i danske kroner " + (int)(pris * 100) / 100.0);
+        System.out.println("Pris efter dansk moms: " + (int)(pris * 100) / 100.0 + " kr");
 
     }
 
@@ -38,7 +38,7 @@ public class Moms {
         double moms = 16;
         pris = pris * (1 + (moms / 100));
 
-        System.out.println("Pris i tysk " + (int)(pris * 100) / 100.0);
+        System.out.println("Pris efter tysk moms: " + (int)(pris * 100) / 100.0 + " kr");
 
     }
 
