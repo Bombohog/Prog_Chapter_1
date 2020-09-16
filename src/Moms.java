@@ -1,10 +1,11 @@
 /********************************************
- * Project description
+ * Et program der kan beregne moms dansk/tysk
  *
  * Created by: Lasse J. Kongsdal
  * Date: 16-09-2020
  *
- * Description of program
+ * Du kan indsætte en pris og så kan den
+ * beregne prisen ud efter moms.
  ********************************************/
 
 import java.util.Scanner;
