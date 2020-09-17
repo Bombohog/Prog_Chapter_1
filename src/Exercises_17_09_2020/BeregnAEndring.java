@@ -53,6 +53,9 @@ public class BeregnAEndring {
         System.out.println("    " + antalAfNickels + " nickels");
         System.out.println("    " + antalAfPennies + " pennies");*/
 
+        // Grunden til at denne nye variabel bliver lavet er fordi
+        // at ellers ville funktionen AntalAfValuta(antal) blive kaldt 5 gange
+        // som er unødvendigt, istedet bliver den kaldt en gang.
         int valutaer[] = AntalAfValuta(antal);
 
         // Vis resultatet
