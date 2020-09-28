@@ -22,18 +22,18 @@ public class ClassTest {
 
         String enteredInput = input.nextLine();
         
-        switch (enteredInput) {
-            case "Lasse" -> System.out.println("Name: " + students[0].name + " " + students[0].middleName + " " + students[0].lastName +
+        switch (enteredInput.toLowerCase()) {
+            case "lasse" -> System.out.println("Name: " + students[0].name + " " + students[0].middleName + " " + students[0].lastName +
                     "\nAge: " + students[0].age + "\nLives in: " + students[0].city + "\nAcademics: " + students[0].academics);
-            case "Fredrik" -> System.out.println("Name: " + students[1].name + " " + students[1].middleName + " " + students[1].lastName +
+            case "fredrik" -> System.out.println("Name: " + students[1].name + " " + students[1].middleName + " " + students[1].lastName +
                     "\nAge: " + students[1].age + "\nLives in: " + students[1].city + "\nAcademics: " + students[1].academics);
-            case "Deniz" -> System.out.println("Name: " + students[2].name + " " + students[2].middleName + " " + students[2].lastName +
+            case "deniz" -> System.out.println("Name: " + students[2].name + " " + students[2].middleName + " " + students[2].lastName +
                     "\nAge: " + students[2].age + "\nLives in: " + students[2].city + "\nAcademics: " + students[2].academics);
-            case "Simon" -> System.out.println("Name: " + students[3].name + " " + students[3].middleName + " " + students[3].lastName +
+            case "simon" -> System.out.println("Name: " + students[3].name + " " + students[3].middleName + " " + students[3].lastName +
                     "\nAge: " + students[3].age + "\nLives in: " + students[3].city + "\nAcademics: " + students[3].academics);
             default -> {
                 for (Student i : students) {
-                    if (enteredInput == i.middleName || enteredInput == i.lastName) {
+                    if (enteredInput.equals(i.middleName) || enteredInput.equals(i.lastName)) {
                         System.out.println("Name: " + i.name + " " + i.middleName + " " + i.lastName +
                                 "\nAge: " + i.age + "\nLives in: " + i.city + "\nAcademics: " + i.academics);
                     } else {
@@ -53,6 +53,7 @@ public class ClassTest {
         lasse.lastName = "Kongsdal";
         lasse.age = 22;
         lasse.city = "Skuderløse";
+        lasse.academics = "AP Graduate";
 
         Student fredrik = new Student();
         fredrik.name = "Fredrik";
@@ -60,6 +61,7 @@ public class ClassTest {
         fredrik.lastName = "Bille";
         fredrik.age = 24;
         fredrik.city = "Nykøbing Falster";
+        fredrik.academics = "AP Graduate";
 
         Student deniz = new Student();
         deniz.name = "Deniz";
@@ -67,6 +69,7 @@ public class ClassTest {
         deniz.lastName = "Yandim";
         deniz.age = 20;
         deniz.city = "Vordingborg";
+        deniz.academics = "AP Graduate";
 
         Student simon = new Student();
         simon.name = "Simon";
@@ -74,21 +77,20 @@ public class ClassTest {
         simon.lastName = "Heegaard";
         simon.age = 24;
         simon.city = "Faxe";
+        simon.academics = "AP Graduate";
 
         return new Student[]{lasse, fredrik, deniz, simon};
     }
-
-    ClassTest() {Student.academics = "AP Graduate";}
 
 }
 
 class Student {
 
-    public static String name;
-    public static String middleName;
-    public static String lastName;
-    public static int age;
-    public static String city;
-    public static String academics;
+    public String name;
+    public String middleName;
+    public String lastName;
+    public int age;
+    public String city;
+    public String academics;
 
 }
