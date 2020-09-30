@@ -17,7 +17,7 @@ public class Opg_10 {
 
         Random rand = new Random();
 
-        // 1. Generate two random single-digit integers
+        // 1. Generate two random integers
         int number1 = rand.nextInt((999 - 1) + 1) + 1;
         int number2 = rand.nextInt((999 - 1) + 1) + 1;
 

@@ -24,6 +24,8 @@ public class Opg_12 {
             if ((number % 10) == (number / 100)) {System.out.println(number + " is a palindrome");}
             else {System.out.println(number + " is not a palindrome");}
 
+        } else {
+            System.out.println("Invalid Input");
         }
 
     }
