@@ -11,13 +11,14 @@ package Exercises_30_09_2020;
 
 import java.text.*;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class SmartHome {
 
     public static Thermostat smartThermostat = new Thermostat();
     public static Radiator smartRadiator = new Radiator(false, 20.5, 20.5);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         smartThermostat.tempLog.add(smartRadiator.temp);
         DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
@@ -28,21 +29,39 @@ public class SmartHome {
 
         ChangeAndLog(22);
 
+        TimeUnit.SECONDS.sleep(5);
+
         ChangeAndLog(22.5);
+
+        TimeUnit.SECONDS.sleep(10);
 
         ChangeAndLog(24.2);
 
+        TimeUnit.SECONDS.sleep(7);
+
         ChangeAndLog(25.7);
 
-        ChangeAndLog(26.6);
+        TimeUnit.SECONDS.sleep(10);
 
         ChangeAndLog(26.6);
+
+        TimeUnit.SECONDS.sleep(1);
+
+        ChangeAndLog(26.6);
+
+        TimeUnit.SECONDS.sleep(2);
 
         ChangeAndLog(26.1);
 
+        TimeUnit.SECONDS.sleep(4);
+
         ChangeAndLog(25.5);
 
+        TimeUnit.SECONDS.sleep(1);
+
         smartRadiator.Status(false);
+
+        TimeUnit.SECONDS.sleep(2);
 
         ChangeAndLog(25.3);
 
