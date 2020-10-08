@@ -11,7 +11,7 @@ public class Opg_7 {
 
     public static void main(String[] args) {
 
-        // Variabler af pi, 1 og 1.0.
+        // Chapter_2_Examples.Variabler af pi, 1 og 1.0.
         double pi1 = 4 * (1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + 1/13);
         double pi = 4 * (1.0 - 1.0/3 + 1.0/5 - 1.0/7 + 1.0/9 - 1.0/11 + 1.0/13);
 

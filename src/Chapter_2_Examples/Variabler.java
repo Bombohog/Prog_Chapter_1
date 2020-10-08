@@ -7,6 +7,8 @@
  * Description of program
  ********************************************/
 
+package Chapter_2_Examples;
+
 public class Variabler {
 
     public static void main(String[] args) {

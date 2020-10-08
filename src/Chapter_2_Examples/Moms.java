@@ -8,6 +8,8 @@
  * beregne prisen ud efter moms.
  ********************************************/
 
+package Chapter_2_Examples;
+
 import java.util.Scanner;
 
 public class Moms {

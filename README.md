@@ -8,6 +8,6 @@ And other exercises like:
 
   Refaktoring (Exercises_17_09_2020)
   
-  Learning about variables (Moms.java, Variabler.java)
+  Learning about variables (Chapter_2_Examples.Moms.java, Chapter_2_Examples.Variabler.java)
   
   ...
