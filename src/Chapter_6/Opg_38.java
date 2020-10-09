@@ -21,19 +21,19 @@ public class Opg_38 {
     public static void PrintLettersNumbers() {
 
         int countdown = 200;
-        int numbersPerLineReached = 10;
+        int charactersPerLineReached = 10;
 
         while (countdown > 0) {
 
-            if (numbersPerLineReached == 0) {
+            if (charactersPerLineReached == 0) {
 
                 System.out.print("\n" + GetRandomUpperCaseLetter() + " ");
-                numbersPerLineReached = 9;
+                charactersPerLineReached = 9;
 
             } else {
 
                 System.out.print(GetRandomUpperCaseLetter() + " ");
-                numbersPerLineReached--;
+                charactersPerLineReached--;
 
             }
 
@@ -45,15 +45,15 @@ public class Opg_38 {
 
         while (countdown > 0) {
 
-            if (numbersPerLineReached == 0) {
+            if (charactersPerLineReached == 0) {
 
                 System.out.print("\n" + GetRandomDigitCharacter() + " ");
-                numbersPerLineReached = 9;
+                charactersPerLineReached = 9;
 
             } else {
 
                 System.out.print(GetRandomDigitCharacter() + " ");
-                numbersPerLineReached--;
+                charactersPerLineReached--;
 
             }
 

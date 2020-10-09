@@ -25,13 +25,38 @@ public class Opg_7 {
         System.out.print("Enter number of years: ");
         double years = input.nextDouble();
 
-        System.out.printf("\nFuture value is: $%d", FutureValue(investAmount, interestRate, years));
+        System.out.printf("\nFuture value is: $%.2f", FutureInvestmentValue(investAmount, interestRate, years));
+        System.out.println("\n\nThese are the foregoing values:");
+        FutureValues(investAmount, interestRate, years);
 
     }
 
-    public static double FutureValue(double investAmount, double interestRate, double years) {
+    public static double FutureInvestmentValue(double investmentAmount, double yearlyInterest, double years) {
 
-        return investAmount * (Math.pow((1 + interestRate), (years * 12)));
+        double futureAmount = 0;
+        double monthlyInterestRate = (yearlyInterest / 100) / 12;
+        for (int i = 1; i <= years; ++i) {
+            for (int m = 1; m <= 12 ; ++m){
+                futureAmount = investmentAmount + (investmentAmount * monthlyInterestRate);
+                investmentAmount = futureAmount;
+            }
+        }
+
+
+        return investmentAmount;
+    }
+
+    public static void FutureValues(double investAmount, double interestRate, double years) {
+
+        System.out.printf("\n%-12s%11s", "Years", "Future Value\n"); // Table header
+
+        for (int i = 1; i <= years; i++) {
+
+            System.out.printf("%-10d", i);
+            System.out.printf("%11.2f\n", FutureInvestmentValue(investAmount, interestRate, i));
+            //System.out.printf("\nFuture value of year %d is: $%.2f", i, FutureInvestmentValue(investAmount, interestRate, i)); // old code
+
+        }
 
     }
 
