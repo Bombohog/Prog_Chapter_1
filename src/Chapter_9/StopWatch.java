@@ -40,4 +40,6 @@ public class StopWatch {
         return this.endTime - this.startTime;
     }
 
+    // The use of the stopwatch can be seen in the Test.java class in Test 3
+
 }
