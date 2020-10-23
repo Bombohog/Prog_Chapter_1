@@ -12,7 +12,7 @@ package Chapter_9;
 // Opg 1
 public class Rectangle {
 
-    double width, height;
+    public double width, height;
 
     public Rectangle() {
         this.width = 1;

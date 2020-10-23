@@ -1,20 +1,13 @@
-/********************************************
- * Project description
- *
- * Created by: Lasse J. Kongsdal
- * Date: 21-10-2020
- *
- * Description of program
- ********************************************/
+import Chapter_9.RegularPolygon;
+import org.junit.jupiter.api.Test;
 
-package Chapter_9;
+import static org.junit.jupiter.api.Assertions.*;
 
-import junit.framework.TestCase;
-
-public class RegularPolygonTest extends TestCase{
+class RegularPolygonTestGeneration {
 
     RegularPolygon r1;
 
+    @Test
     public void testRegularPolygon() {
         r1 = new RegularPolygon();
         assertEquals(3, r1.getN());
@@ -23,14 +16,15 @@ public class RegularPolygonTest extends TestCase{
         assertEquals(0.0, r1.getY());
     }
 
-    public void testGetPerimeter() {
+    @Test
+    void getPerimeter() {
         r1 = new RegularPolygon(4, 2);
         assertEquals(8.0, r1.getPerimeter());
     }
 
-    public void testGetArea() {
+    @Test
+    void getArea() {
         r1 = new RegularPolygon(4, 2);
         assertEquals(4, (int) r1.getArea());
     }
-
 }

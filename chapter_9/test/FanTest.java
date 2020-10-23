@@ -7,8 +7,7 @@
  * Description of program
  ********************************************/
 
-package Chapter_9;
-
+import Chapter_9.Fan;
 import junit.framework.TestCase;
 
 public class FanTest extends TestCase {

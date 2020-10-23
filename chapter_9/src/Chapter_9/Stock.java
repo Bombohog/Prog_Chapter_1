@@ -12,10 +12,10 @@ package Chapter_9;
 // Opg 2
 public class Stock {
 
-    String symbol;
-    String name;
-    double previousClosingPrice;
-    double currentPrice;
+    public String symbol;
+    public String name;
+    public double previousClosingPrice;
+    public double currentPrice;
 
     public Stock(String symbol, String name) {
         this.symbol = symbol;

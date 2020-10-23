@@ -1,5 +1,4 @@
-package Chapter_9;
-
+import Chapter_9.StopWatch;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
