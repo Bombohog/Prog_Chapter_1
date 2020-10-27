@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /********************************************
  * Project description
  *
@@ -11,21 +13,30 @@ public class Lotto {
 
     public static void main(String[] args) {
 
-        int numre[] = new int[10];
+        int numre[] = new int[5];
+        Random rand = new Random();
 
-        for (int i = 0; i <=9 ; i++) {
-            int newnumber = (int) (Math.random() * 10) + 1;
+        for (int i = 0; i < numre.length ; i++) {
+            int newnumber = rand.nextInt((90 - 1) + 1) + 1;
 
-            for (int n = 0; n <=9 ; n++){
-                if( newnumber == numre[n]){
+            for (int n = 0; n < numre.length ; n++) {
+
+                if(newnumber == numre[n]) {
+
                     while(newnumber == numre[n]) {
-                        newnumber = (int) (Math.random() * 10) + 1;
+
+                        newnumber = rand.nextInt((90 - 1) + 1) + 1;
                         n = 0;
-                    }}
+                        
+                    }
+
+                }
+
             }
 
             numre[i] = newnumber;
             System.out.println(numre[i]);
+
         }
 
     }
