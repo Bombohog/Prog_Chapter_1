@@ -46,14 +46,16 @@ public class Opg_3 {
         }
 
         // old code: didnt work because .indexOf finds the first and does not skip already checked indexes
-        /*ArrayList<Integer> indexAlreadyGotten = new ArrayList<Integer>();
+        /*
+        ArrayList<Integer> indexAlreadyGotten = new ArrayList<Integer>();
         for (int occurence: numbersOfOccurences) {
             if (occurence != 0) {
                 String pluralOrNot;
                 if (occurence == 1) {pluralOrNot = "time";} else {pluralOrNot = "times";}
                 System.out.printf("\n%d occurs %d %s", numbersToCheck.get(numbersOfOccurences.indexOf(occurence)), occurence, pluralOrNot);
             }
-        }*/
+        }
+        */
 
         // new code: this gets around the .indexOf by using getters
         for (int i = 0; i < numbersToCheck.size(); i++) {
