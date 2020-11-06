@@ -9,6 +9,7 @@
 
 package Chapter_10;
 
+// Opg. 10.3
 public class MyInteger {
 
 

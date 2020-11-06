@@ -11,6 +11,7 @@ package Chapter_10;
 
 import java.util.Date;
 
+// Opg. 10.1
 public class Time {
 
     private long hour, minute, second;

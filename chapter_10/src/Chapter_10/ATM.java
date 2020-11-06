@@ -12,6 +12,7 @@ package Chapter_10;
 import java.util.Date;
 import java.util.Scanner;
 
+// Opg. 10.7
 public class ATM {
 
     enum booleanState {
@@ -50,18 +51,16 @@ public class ATM {
                 }
 
                 // Menu and actions
-                // TODO fix while loop so it continues until you are done with the account
                 while (true) {
                     menu();
                     booleanState state = choice(input.nextInt(), account, input);
-                    if (state == booleanState.TRUE) { break; }
-                    else if (state == booleanState.EXIT) {
+                    if (state == booleanState.EXIT) {
                         exitAccount = true;
                         break;
                     }
                 } // end of menu-while loop
 
-            } // end of acocunt-while loop
+            } // end of account-while loop
 
         } // end ATM while loop
 
@@ -89,7 +88,7 @@ public class ATM {
 
         switch (menuChoice) {
             case 1: {
-                System.out.println(account.getBalance());
+                System.out.println("The balance is " + account.getBalance());
                 return booleanState.TRUE;
             }
             case 2: {
