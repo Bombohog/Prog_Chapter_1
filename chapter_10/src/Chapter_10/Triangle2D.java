@@ -37,31 +37,48 @@ public class Triangle2D {
 
         return side1 + side2 + side3;
     }
-    // TODO
-    /*
-Punktet P ligger indenfor eller på trekant ABC hvis
 
-  vinkel BAP <= vinkel A  og  vinkel CAP <= vinkel A
-  vinkel ABP <= vinkel B  og  vinkel CBP <= vinkel B
-  vinkel ACP <= vinkel C  og  vinkel BCP <= vinkel C
-    */
     public boolean contains(MyPoint p) {
 
+        /*
+        p1 = A, p2 = B, p3 = C
+        Punktet P ligger indenfor eller på trekant ABC hvis
 
-        if () { return true; }
-        else if () { return true; }
-        else if () { return true; }
+        vinkel BAP <= vinkel A  og  vinkel CAP <= vinkel A
+        vinkel ABP <= vinkel B  og  vinkel CBP <= vinkel B
+        vinkel ACP <= vinkel C  og  vinkel BCP <= vinkel C
+        */
+        double sideC = p1.distance(p2);
+        double sideA = p2.distance(p3);
+        double sideB = p3.distance(p1);
+        double vinkelA = Math.acos((Math.pow(sideB, 2) + Math.pow(sideC, 2) - Math.pow(sideA, 2)) / (2 * sideB * sideC));
+        double vinkelB = Math.acos((Math.pow(sideA, 2) + Math.pow(sideC, 2) - Math.pow(sideB, 2)) / (2 * sideA * sideC));
+        double vinkelC = Math.acos((Math.pow(sideA, 2) + Math.pow(sideB, 2) - Math.pow(sideC, 2)) / (2 * sideA * sideB));
+        double sideAP = p.distance(p1);
+        double sideBP = p.distance(p2);
+        double sideCP = p.distance(p3);
+        double vinkelABP = Math.acos((Math.pow(sideBP, 2) + Math.pow(sideCP, 2) - Math.pow(sideA, 2)) / (2 * sideBP * sideCP));
+        double vinkelACP = Math.acos((Math.pow(sideAP, 2) + Math.pow(sideCP, 2) - Math.pow(sideB, 2)) / (2 * sideAP * sideCP));
+        double vinkelCBP = Math.acos((Math.pow(sideAP, 2) + Math.pow(sideBP, 2) - Math.pow(sideC, 2)) / (2 * sideAP * sideBP));
+
+        if (vinkelABP <= vinkelA && vinkelACP <= vinkelA) { return true; }
+        else if (vinkelABP <= vinkelB && vinkelCBP <= vinkelB) { return true; }
+        else if (vinkelACP <= vinkelC && vinkelCBP <= vinkelC) { return true; }
         else { return false; }
 
     }
-    // TODO
+
+    /*// TODO
     public boolean contains(Triangle2D t) {
         if () { return true; } else { return false; }
     }
     // TODO
     public boolean overlaps(Triangle2D t) {
+
+        // check om hver a t's punkter er inde i denne trekant
         if () { return true; } else { return false; }
-    }
+
+    }*/
 
     public MyPoint getP1() {
         return p1;

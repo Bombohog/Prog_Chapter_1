@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Opg_11_3</OriginalElement>
+  <nodes>
+    <node x="61.5" y="0.0">Opg_11_3.Account</node>
+    <node x="189.0" y="458.0">Opg_11_3.CheckingAccount</node>
+    <node x="403.0" y="0.0">Opg_11_3.Main</node>
+    <node x="0.0" y="458.0">Opg_11_3.SavingsAccount</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Opg_11_3.CheckingAccount" target="Opg_11_3.Account">
+      <point x="0.0" y="-27.0" />
+      <point x="273.5" y="433.0" />
+      <point x="237.75" y="433.0" />
+      <point x="58.75" y="204.0" />
+    </edge>
+    <edge source="Opg_11_3.SavingsAccount" target="Opg_11_3.Account">
+      <point x="0.0" y="-27.0" />
+      <point x="84.5" y="433.0" />
+      <point x="120.25" y="433.0" />
+      <point x="-58.75" y="204.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="276.0" y="256.0" />
+  <SelectedNodes>
+    <node>Opg_11_3.Account</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

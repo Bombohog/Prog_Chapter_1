@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Opg_11_2</OriginalElement>
+  <nodes>
+    <node x="207.5" y="202.0">Opg_11_2.Main</node>
+    <node x="448.5" y="328.0">Opg_11_2.Employee</node>
+    <node x="-2.5" y="277.5">Opg_11_2.Student.Status</node>
+    <node x="-5.0" y="70.0">Opg_11_2.Student</node>
+    <node x="430.5" y="-7.0">Opg_11_2.Person</node>
+    <node x="244.5" y="339.0">Opg_11_2.Faculty</node>
+    <node x="632.5" y="357.0">Opg_11_2.Staff</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Opg_11_2.Employee" target="Opg_11_2.Person">
+      <point x="0.0" y="-72.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="Opg_11_2.Faculty" target="Opg_11_2.Employee">
+      <point x="75.5" y="0.0" />
+      <point x="-71.5" y="0.0" />
+    </edge>
+    <edge source="Opg_11_2.Staff" target="Opg_11_2.Employee">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="Opg_11_2.Student" target="Opg_11_2.Person">
+      <point x="85.0" y="0.0" />
+      <point x="-89.5" y="0.0" />
+    </edge>
+    <edge source="Opg_11_2.Student.Status" target="Opg_11_2.Student">
+      <point x="0.0" y="-82.5" />
+      <point x="0.0" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal" zoom="1.0" x="380.5" y="232.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

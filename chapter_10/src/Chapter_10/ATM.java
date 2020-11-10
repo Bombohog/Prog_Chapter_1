@@ -75,7 +75,7 @@ public class ATM {
 
     private static void menu() {
         System.out.print(
-                "Main menu\n" +
+                "Opg_11_1.Main menu\n" +
                 "1: Check balance\n" +
                 "2: Withdraw\n" +
                 "3: Deposit\n" +

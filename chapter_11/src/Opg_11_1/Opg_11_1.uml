@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Opg_11_1</OriginalElement>
+  <nodes>
+    <node x="0.0" y="343.0">Opg_11_1.Main</node>
+    <node x="413.76359897679134" y="0.0">Opg_11_1.GeometricObject</node>
+    <node x="0.0" y="11.0">Opg_11_1.Triangle</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Opg_11_1.Triangle" target="Opg_11_1.GeometricObject">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Circular" zoom="1.0" x="322.0" y="123.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
