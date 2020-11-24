@@ -1,0 +1,7 @@
+This is a random document used for exercise 13.
+This is line 2.
+And this is line 3.
+As you can see this is just a document,
+meant for testing the reading method,
+that will find out how many characters,
+words and lines there are in this document.

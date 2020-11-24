@@ -1,4 +1,4 @@
-import Opg_11_1.Triangle;
+import Chapter_11.Opg_11_1.Triangle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -38,7 +38,7 @@ class TriangleTest {
     @Test
     void triangleToString() {
         setup();
-        assertEquals("Opg_11_1.Triangle: side1 = 2.0 side2 = 3.0 side3 = 2.0", t.toString());
+        assertEquals("Chapter_11.Opg_11_1.Triangle: side1 = 2.0 side2 = 3.0 side3 = 2.0", t.toString());
     }
 
 }
